@@ -1,0 +1,270 @@
+{
+  "Table": [
+    {
+      "Field": "IsUnRead",
+      "Data_Type": "Boolean",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Category",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "No"
+    },
+    {
+      "Field": "ClosedBy",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "ClosedDateTime",
+      "Data_Type": "Date/Time",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Cost",
+      "Data_Type": "Number(8,2)",
+      "Nullable": "Yes",
+      "business_rules": "Cost = 0"
+    },
+    {
+      "Field": "CreatedBy",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes",
+      "business_rules": "CreatedBy = $(CurrentUserName())"
+    },
+    {
+      "Field": "CreatedDateTime",
+      "Data_Type": "Date/Time",
+      "Nullable": "Yes",
+      "business_rules": "CreatedDateTime = $(CurrentDateTime())"
+    },
+    {
+      "Field": "Description",
+      "Data_Type": "Unicode Text(Max)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Environment",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "ErrorMessage",
+      "Data_Type": "Unicode Text(1000)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "FirstIncidentLinkedDateTime",
+      "Data_Type": "Date/Time",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Impact",
+      "Data_Type": "Unicode Text(30)",
+      "Nullable": "Yes",
+      "business_rules": "Impact = Low"
+    },
+    {
+      "Field": "IncidentToRootCauseDuration",
+      "Data_Type": "Number(12,0)",
+      "Nullable": "Yes",
+      "business_rules": "IncidentToRootCauseDuration = 0"
+    },
+    {
+      "Field": "IsInFinalState",
+      "Data_Type": "Boolean",
+      "Nullable": "Yes",
+      "business_rules": "IsInFinalState = False"
+    },
+    {
+      "Field": "IsWorkAround",
+      "Data_Type": "Boolean",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "KnownErrorDate",
+      "Data_Type": "Date/Time",
+      "Nullable": "Yes",
+      "business_rules": "KnownErrorDuration = 0"
+    },
+    {
+      "Field": "KnownErrorDuration",
+      "Data_Type": "Number(10,0)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "KPIAfterIdentification",
+      "Data_Type": "Number(12,0)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "KPIBeforeIdentification",
+      "Data_Type": "Number(12,0)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "KPITimeUntilRootCause",
+      "Data_Type": "Number(12,0)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "LastModBy",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes",
+      "business_rules": "LastModBy = $(CurrentUserName())"
+    },
+    {
+      "Field": "LastModDateTime",
+      "Data_Type": "Date/Time",
+      "Nullable": "Yes",
+      "business_rules": "LastModDateTime = $(CurrentDateTime())"
+    },
+    {
+      "Field": "OrganizationalUnit",
+      "Data_Type": "Unicode Text(60)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Owner",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "OwnerEmailAddress",
+      "Data_Type": "Unicode Text(255)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "OwnerTeam",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes",
+      "business_rules": "OwnerTeam = Problem Management"
+    },
+    {
+      "Field": "Priority",
+      "Data_Type": "Unicode Text(25)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "ProblemDuration",
+      "Data_Type": "Number(10,0)",
+      "Nullable": "Yes",
+      "business_rules": "ProblemDuration = 0"
+    },
+    {
+      "Field": "ProblemLifetime",
+      "Data_Type": "Number(10,0)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "ProblemNumber",
+      "Data_Type": "Number(10,0)",
+      "Nullable": "Yes",
+      "business_rules": "ProblemNumber = $(GetNextCounter(\"ProblemNumberCounter\"))"
+    },
+    {
+      "Field": "ReadOnly",
+      "Data_Type": "Boolean",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "RecId",
+      "Data_Type": "Fixed Text(32)",
+      "Nullable": "No",
+      "business_rules": "RecId = $(NewGuid())"
+    },
+    {
+      "Field": "Resolution",
+      "Data_Type": "Unicode Text(Max)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "ResolutionAction",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "ResolutionEscLink",
+      "Data_Type": "Link",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "ResponseEscalationLink",
+      "Data_Type": "Link",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "RootCause",
+      "Data_Type": "Unicode Text(Max)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "RootCauseDateTimeCreated",
+      "Data_Type": "Date/Time",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Service",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "SocialTextHeader",
+      "Data_Type": "Unicode Text(Max)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Source",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Status",
+      "Data_Type": "Unicode Text(40)",
+      "Nullable": "Yes",
+      "business_rules": "Status = Logged"
+    },
+    {
+      "Field": "Subject",
+      "Data_Type": "Unicode Text(100)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "TargetResolutionTime",
+      "Data_Type": "Date/Time",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "TotalTimeSpent",
+      "Data_Type": "Number(10,2)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "TotalWaitingDuration",
+      "Data_Type": "Number(8,2)",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "TypeOfProblem",
+      "Data_Type": "Unicode Text(60)",
+      "Nullable": "Yes",
+      "business_rules": "TypeOfProblem = Problem"
+    },
+    {
+      "Field": "Urgency",
+      "Data_Type": "Unicode Text(30)",
+      "Nullable": "Yes",
+      "business_rules": "Urgency = Low"
+    },
+    {
+      "Field": "WaitingEscLink",
+      "Data_Type": "Link",
+      "Nullable": "Yes"
+    },
+    {
+      "Field": "Workaround",
+      "Data_Type": "Unicode Text(Max)",
+      "Nullable": "Yes"
+    }
+  ]
+}
